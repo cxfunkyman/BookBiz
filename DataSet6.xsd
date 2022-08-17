@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet6" targetNamespace="http://tempuri.org/DataSet6.xsd" xmlns:mstns="http://tempuri.org/DataSet6.xsd" xmlns="http://tempuri.org/DataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=C:\Users\Seky-Vanier\source\repos\POSystem\POSystem\DAL\test.db" IsAppSettingsProperty="false" Modifier="Assembly" Name="test.db" Provider="Devart.Data.SQLite" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Dept_deptTableAdapter" GeneratorDataComponentClassName="Dept_deptTableAdapter" Name="Dept_dept" UserDataComponentName="Dept_deptTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="test.db" DbObjectName="&quot;main&quot;.Dept_dept" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT departement FROM "main".Dept_dept</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="departement" DataSetColumn="departement" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataSet6" msprop:Generator_DataSetName="DataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Dept_dept" msprop:Generator_RowEvHandlerName="Dept_deptRowChangeEventHandler" msprop:Generator_RowDeletedName="Dept_deptRowDeleted" msprop:Generator_RowDeletingName="Dept_deptRowDeleting" msprop:Generator_RowEvArgName="Dept_deptRowChangeEvent" msprop:Generator_TablePropName="Dept_dept" msprop:Generator_RowChangedName="Dept_deptRowChanged" msprop:Generator_RowChangingName="Dept_deptRowChanging" msprop:Generator_TableClassName="Dept_deptDataTable" msprop:Generator_RowClassName="Dept_deptRow" msprop:Generator_TableVarName="tableDept_dept" msprop:Generator_UserTableName="Dept_dept">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="departement" msprop:Generator_ColumnPropNameInRow="departement" msprop:Generator_ColumnPropNameInTable="departementColumn" msprop:Generator_ColumnVarNameInTable="columndepartement" msprop:Generator_UserColumnName="departement" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
